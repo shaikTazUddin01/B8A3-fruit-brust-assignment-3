@@ -69,10 +69,12 @@
         <!-- banner carousel start -->
         <div class="carousel w-full mt-10">
             <!-- slider-1 -->
-            <div id="slide1" class="carousel-item relative w-full bg-[url('./images/banner1.png')] bg-cover rounded-2xl">
+            <div id="slide1"
+                class="carousel-item relative w-full bg-[url('./images/banner1.png')] bg-cover rounded-2xl">
                 <div class="text-center w-full p-16 pb-10 bg-[#00000078] bg-cover rounded-2xl">
                     <div class="mb-24 space-y-7 ">
-                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h2>
+                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep
+                        </h2>
                         <p class="font-medium text-[20px] text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white">Shop Now</button>
                     </div>
@@ -86,7 +88,8 @@
             <div id="slide2" class="carousel-item relative w-full bg-[url('./images/banner2.png')] bg-no-repeat ">
                 <div class="text-center w-full p-16  pb-10 bg-[#00000078] bg-no-repeat">
                     <div class="lg:mb-24 space-y-7">
-                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h2>
+                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep
+                        </h2>
                         <p class="font-medium text-[20px] text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white ">Shop Now</button>
                     </div>
@@ -100,7 +103,8 @@
             <div id="slide3" class="carousel-item relative w-full bg-[url('./images/banner3.png')] ">
                 <div class="text-center w-full p-16 pb-10 bg-[#00000078]">
                     <div class="mb-24 space-y-7">
-                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h2>
+                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep
+                        </h2>
                         <p class="font-medium text-[20px] text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white">Shop Now</button>
                     </div>
@@ -114,7 +118,8 @@
             <div id="slide4" class="carousel-item relative w-full bg-[url('./images/banner4.png')]">
                 <div class="text-center w-full p-16 pb-10 bg-[#00000078]">
                     <div class="mb-24 space-y-7">
-                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep</h2>
+                        <h2 class="text-5xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br>doorstep
+                        </h2>
                         <p class="font-medium text-[20px] text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white ">Shop Now</button>
                     </div>
@@ -152,7 +157,7 @@
         </div>
     </header>
     <!-- header secion end -->
-    <main class="container mx-auto px-6 lg:px-16 my-20">
+    <main class="container mx-auto px-6 -mt-20 lg:px-16 mb-20">
         <!-- Deal of the day start -->
         <div class="my-40">
             <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
@@ -206,9 +211,9 @@
             </div>
             <!-- deal of the day card area -->
             <!-- <div class="flex flex-col md:flex-wrap lg:flex-nowrap lg:flex-row  gap-6 my-12"> -->
-            <div class="flex flex-col lg:flex-row gap-6 my-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-12 gap-6">
                 <!-- card item 1-->
-                <div class="card w-auto md:w-96 bg-base-100 shadow-xl">
+                <div class="card w-auto bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -224,12 +229,51 @@
                             <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked />
                         </div>
                         <div class="card-actions">
-                            <a href="" class="font-bold text-lg text-[#F85559]">Details</a>
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="font-bold text-lg text-[#F85559]"
+                                onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card w-auto bg-base-100">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-2">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <hr class="w-3/4">
+                                            <p>Apples</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-7"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-8"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-9"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-10"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-11"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                            <div class="modal-action">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn border-[#F85559] text-[#F85559] px-5">Close</button>
+                                                <button class="btn btn-error text-white px-5">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
                 <!-- card item 2 -->
-                <div class="card w-auto md:w-96 bg-base-100 shadow-xl">
+                <div class="card w-auto bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -245,13 +289,52 @@
                             <input type="radio" name="rating-11" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
                         <div class="card-actions">
-                            <a href="" class="font-bold text-lg text-[#F85559]">Details</a>
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="font-bold text-lg text-[#F85559]"
+                                onclick="my_modal_6.showModal()">Details</button>
+                            <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card w-auto bg-base-100 ">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-2">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <hr class="w-3/4">
+                                            <p>Orange</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-7"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-8"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-9"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-10"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-11"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                            <div class="modal-action">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn border-[#F85559] text-[#F85559] px-5">Close</button>
+                                                <button class="btn btn-error text-white px-5">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
 
                 <!-- card item 3 -->
-                <div class="card w-auto md:w-96 bg-base-100 shadow-xl">
+                <div class="card w-auto bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -267,12 +350,51 @@
                             <input type="radio" name="rating-16" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
                         <div class="card-actions">
-                            <a href="" class="font-bold text-lg text-[#F85559]">Details</a>
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="font-bold text-lg text-[#F85559]"
+                                onclick="my_modal_7.showModal()">Details</button>
+                            <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card w-auto bg-base-100 ">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-2">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <hr class="w-3/4">
+                                            <p>Red Dragon</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-7"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-8"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-9"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-10"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-11"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                            <div class="modal-action">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn border-[#F85559] text-[#F85559] px-5">Close</button>
+                                                <button class="btn btn-error text-white px-5">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
                 <!-- card item 4 -->
-                <div class="card w-auto md:w-96 bg-base-100 shadow-xl">
+                <div class="card w-auto bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -288,7 +410,47 @@
                             <input type="radio" name="rating-21" class="mask mask-star-2 bg-[#F85559]" checked />
                         </div>
                         <div class="card-actions">
-                            <a href="" class="font-bold text-lg text-[#F85559]">Details</a>
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="font-bold text-lg text-[#F85559]"
+                                onclick="my_modal_8.showModal()">Details</button>
+                            <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card w-auto bg-base-100 ">
+                                        <figure class="px-10 pt-10">
+                                            <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-2">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <hr class="w-3/4">
+                                            <p>Banana</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-7"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-8"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-9"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-10"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-11"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                            <div class="modal-action">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn border-[#F85559] text-[#F85559] px-5">Close</button>
+                                                <button class="btn btn-error text-white px-5">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -359,10 +521,11 @@
                 </p>
             </div>
             <div class="grid grid-col-1 lg:flex flex-row gap-12 items-center">
-            <!-- <div class="flex flex-col lg:flex-row gap-12 items-center"> -->
+                <!-- <div class="flex flex-col lg:flex-row gap-12 items-center"> -->
                 <div class="-order-2 lg:-order-3">
                     <div class="lg:flex items-start gap-4 text-center lg:text-left ">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
                             <i class="fa-solid fa-people-group"></i>
                         </div>
 
@@ -371,7 +534,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
-                            
+
                             <p class="text-[15px] font-medium">Professional employees are there for you to pick the
 
                                 most
@@ -380,7 +543,8 @@
                     </div>
 
                     <div class="lg:flex items-start gap-4 text-center lg:text-left ">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
                             <!-- <i class="fa-solid fa-people-group"></i> -->
                             <i class="fa-solid fa-heart-circle-check"></i>
                         </div>
@@ -390,7 +554,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
-                            
+
                             <p class="text-[15px] font-medium">Professional employees are there for you to pick the
 
                                 most
@@ -399,7 +563,8 @@
                     </div>
 
                     <div class="lg:flex items-start gap-4 text-center lg:text-left ">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto flex justify-center">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto flex justify-center">
                             <i class="fa-solid fa-gift"></i>
                         </div>
 
@@ -408,7 +573,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
-                            
+
                             <p class="text-[15px] font-medium">Professional employees are there for you to pick the
 
                                 most
@@ -419,22 +584,24 @@
                 </div>
 
 
-                <div class="-order-3  lg:-order-2">
+                <div class="-order-3  lg:-order-2 flex justify-center">
                     <img src="./images/whychoose1.png" alt="" class="w-[580px] h-[350px]">
                 </div>
                 <!-- right text -->
                 <!-- <div class="-order-1 hidden lg:grid lg:-order-1"> -->
                 <div class="-order-1 lg:-order-1 -mt-10 lg:mt-0">
 
-                    <div class="flex flex-col md:flex-col lg:flex lg:flex-row-reverse items-start gap-4">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center ">
+                    <div
+                        class="flex flex-col md:flex-col md:items-center lg:flex lg:flex-row-reverse items-start gap-4">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center ">
                             <!-- <i class="fa-solid fa-people-group"></i> -->
                             <i class="fa-solid fa-boxes-packing"></i>
                         </div>
 
                         <div class="mb-5 text-center md:text-center lg:text-right">
                             <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
-                            
+
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
@@ -445,14 +612,15 @@
 
 
 
-                    <div class="flex flex-col lg:flex lg:flex-row-reverse items-start gap-4">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
+                    <div class="flex flex-col lg:flex lg:flex-row-reverse items-start md:items-center gap-4">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto lg:mb-16 flex justify-center">
                             <i class="fa-solid fa-ice-cream"></i>
                         </div>
 
                         <div class="mb-5 text-center lg:text-right">
                             <h3 class="text-2xl font-extrabold">Sustainable Practice</h3>
-                            
+
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
@@ -462,14 +630,15 @@
                     </div>
 
 
-                    <div class="flex flex-col lg:flex lg:flex-row-reverse items-start gap-4">
-                        <div class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto flex justify-center">
+                    <div class="flex flex-col lg:flex lg:flex-row-reverse items-start md:items-center gap-4">
+                        <div
+                            class="p-3 w-[55px] lg:w-auto rounded-3xl lg:rounded-[50%] bg-[#ece9e9] mt-2 m-auto flex justify-center">
                             <i class="fa-solid fa-thumbs-up"></i>
                         </div>
 
                         <div class="mb-5 text-center lg:text-right">
                             <h3 class="text-2xl font-extrabold">The Benefits Only</h3>
-                            
+
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="w-3/12 border-black my-2">
                             </div>
@@ -478,7 +647,7 @@
                         </div>
                     </div>
 
-                    
+
 
 
                 </div>
@@ -515,7 +684,7 @@
                     <i class="fa-brands fa-linkedin-in text-2xl"></i>
                     <i class="fa-brands fa-instagram text-2xl"></i>
                     <i class="fa-brands fa-apple text-2xl"></i>
-                    
+
                 </div>
     </footer>
 </body>
